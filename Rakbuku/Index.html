@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <p></p>
+    <h1>Bookshelf App</h1>
+    <div class="find">
+      <label for="nama">Judul</label>
+      <div class="input-find">
+        <input type="text" id="nama" placeholder="Judul">
+        <button id="cari">Cari</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <form onsubmit="ValidSubmit()">
+      <h1>Masukan Buku Ke Rak</h1>
+      <label for="judul">Judul</label>
+      <input type="text" id="judul" placeholder="Judul" required maxlength="20">
+      <label for="penulis">Penulis</label>
+      <input type="text" id="penulis" placeholder="Penulis" required maxlength="20">
+      <label for="tahun">Tahun</label>
+      <input type="number" id="tahun" min="1" value="2000">
+      <label for="check">Selesai dibaca</label>
+      <input type="checkbox" name="check" id="check">
+      <button id="submit" type="submit">Masukkan Buku Ke Rak </button>
+    </form>
+
+    <div id="unfinished" class="unfinished">
+      <h1>Belum selesai di baca</h1>
+    </div>
+    <div id="finished" class="finished">
+      <h1>Selesai di baca</h1>
+    </div>
+  </main>
+<script src="./Script.js"></script>
+</body>
+</html>
